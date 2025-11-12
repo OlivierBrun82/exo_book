@@ -7,7 +7,7 @@ created_at - datetime - not null - default current_timestamp
 updated_at - datetime - not null - default current_timestamp
 -----------------------------------------------------------------
 
-1_	Création d'un git nommé exo_book avec template .gitignore node
+1_	Création d'un git nommé exo_book avec template .gitignore node de github
 
 	- cd exo_book
 	- git clone git@github.com:OlivierBrun82/exo_book.git
@@ -16,10 +16,13 @@ updated_at - datetime - not null - default current_timestamp
 
 	- "npm install --save-dev nodemon"
 		pour recharger automatiquement le server
+		
 	- "npm install express"
 		afin d'avoir un squelette de la structure
+		
 	- "npm install dotenv"
 		pour charger les variables d'environnement du ficher .env
+		
 	- Création du fichier .env avec ses valeurs :
 		PORT=3000
 		NODE_ENV=development
@@ -28,10 +31,13 @@ updated_at - datetime - not null - default current_timestamp
 		DB_USER=root
 		DB_PASS=
 		DB_NAME=exo_book
+		
 	- "npm install cors"
 		lorsque l'on fera le front-end pour quils communiquent ensemble.
+		
 	- "npm install sequelize mysql2"
 		installation de l'orm sequelize avec le parametre mysql2
+		
 	- "npm install --save-dev sequelize-cli"
 		installation de l'outil en ligne de commande sequelize-cli que l'on utilisera plus tard.
 		
@@ -80,4 +86,3 @@ module.exports = {
 "db:migrate:undo": "sequelize db:migrate:undo",
 "db:seed": "sequelize db:seed:all",
 "db:seed:undo": "sequelize db:seed:undo:all"
-
