@@ -190,3 +190,29 @@ puis :
 ```bash
 npm run db:migrate
 ```
+
+## généré par gemini pour remplir la base de donnée d'une 10aines d'oeuvres :
+
+INSERT INTO `books` (`title`, `autor`, `dispo`, `createdAt`, `updatedAt`) VALUES
+('L\'Étranger', 'Albert Camus', 1, NOW(), NOW()),
+('1984', 'George Orwell', 1, NOW(), NOW()),
+('Le Petit Prince', 'Antoine de Saint-Exupéry', 0, NOW(), NOW()),
+('Fahrenheit 451', 'Ray Bradbury', 1, NOW(), NOW()),
+('Orgueil et Préjugés', 'Jane Austen', 1, NOW(), NOW()),
+('Le Seigneur des Anneaux', 'J.R.R. Tolkien', 0, NOW(), NOW()),
+('Les Misérables', 'Victor Hugo', 1, NOW(), NOW()),
+('Dune', 'Frank Herbert', 1, NOW(), NOW()),
+('Crime et Châtiment', 'Fiodor Dostoïevski', 0, NOW(), NOW()),
+('Le Nom de la Rose', 'Umberto Eco', 1, NOW(), NOW());
+
+### création du dossier controllers avec le controller books
+### création du dossier routers avec le fichier books.routes.js et de l'index.js
+## création du reads, read et create
+{
+	"title": "toto chez tata",
+	"autor": "toto",
+	"dispo": true
+}
+## création du update
+## créatuion du delete
+

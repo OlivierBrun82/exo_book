@@ -14,10 +14,24 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Book.init({
-    title: DataTypes.STRING(150)
+    title: {
+      type: DataTypes.STRING(150),
+      allowNull: false
+    },
+    autor: {
+      type: DataTypes.STRING(150),
+      allowNull: false
+    },
+    dispo: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: true
+    }
   }, {
     sequelize,
     modelName: 'Book',
+    tableName: 'Books',
+    underscored: false
   });
   return Book;
 };
